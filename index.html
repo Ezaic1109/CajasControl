@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rojo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-custom px-4 container-fluid">
+            <a class="navbar-brand" href="/index.html" aria-label="Inicio">
+                <img class="img-fluid" src="./logoelrojo.png" alt="Logo El rojo" style="max-height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./historial.html">Historial</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-4">
+        <section class="row">
+            <!-- Formulario -->
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="staticNombre" class="col-sm-3 col-form-label">Nombre:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="staticNombre">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticCodigo" class="col-sm-3 col-form-label">Código de barras:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="staticCodigo">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticRangoUno" class="col-sm-3 col-form-label">Rango 1:</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control" id="staticRangoUno" value="30" min="0">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="staticRango2" class="col-sm-3 col-form-label">Rango 2:</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control" id="staticRangoDos" value="34" min="0">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticDecimales" class="col-sm-3 col-form-label">Decimales:</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control" id="staticDecimales" value="2" min="0" max="5">
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkDecimalesCodigo">
+                        <label class="form-check-label" for="checkDecimalesCodigo">Usar decimales del código</label>
+                    </div>
+            </div>
+            </form>
+            </div>
+
+            <!-- Tabla -->
+            <div class="col-md-6">
+                <section>
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Código</th>
+                                <th>Cantidad</th>
+                                <th>Kilos</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaProductos">
+
+                        </tbody>
+                         <tfoot>
+        <tr>
+            <th colspan="2">Total</th>
+            <th id="totalCantidad">0</th>
+            <th id="totalKilos">0.000</th>
+        </tr>
+    </tfoot>
+   
+                    </table>
+ <div class="mt-3 text-end">
+    <button id="btnEliminarTodo" class="btn btn-warning">Eliminar todo</button>
+</div>
+<div class="mt-3 text-end">
+    <button id="btnGuardarDatos" class="btn btn-success">Guardar</button>
+</div>
+                </section>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

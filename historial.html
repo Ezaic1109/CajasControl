@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rojo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-custom px-4 container-fluid">
+            <a class="navbar-brand" href="/index.html" aria-label="Inicio">
+                <img class="img-fluid" src="./logoelrojo.png" alt="El rojo"
+                    style="max-height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./historial.html">Historial</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+         <div class="col-md-12">
+    <section>
+        <h4>Historial de cajas</h4>
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Total Cantidad</th>
+                    <th>Total Kilos</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="historialProductos">
+                <!-- Aquí se llenará dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="detalleGuardado" class="mt-4" style="display: none;">
+        <h5>Detalle del Guardado</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Kilos</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="detalleTabla"></tbody>
+        </table>
+        <button id="guardarCambios" class="btn btn-primary">Guardar cambios</button>
+    </section>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/historial.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>
