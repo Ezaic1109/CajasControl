@@ -1,0 +1,25 @@
+{
+  "name": "cajascontrol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezaic1109/CajasControl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezaic1109/CajasControl/issues"
+  },
+  "homepage": "https://github.com/Ezaic1109/CajasControl#readme",
+  "description": "",
+  "dependencies": {
+    "@capacitor/cli": "^7.4.2",
+    "@capacitor/core": "^7.4.2",
+    "@capacitor/ios": "^7.4.2"
+  }
+}

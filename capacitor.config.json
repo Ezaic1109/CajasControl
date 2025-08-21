@@ -1,0 +1,6 @@
+{
+  "appId": "com.ezaic.miapp",
+  "appName": "cajascontrol",
+  "webDir": "www",
+   "bundledWebRuntime": false
+}
